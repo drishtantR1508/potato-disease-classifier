@@ -21,6 +21,7 @@ from api import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',views.upload_image,name='upload'),
     path('api/',include('api.urls')),
     path('predict',views.upload_image,name='upload'),
 
